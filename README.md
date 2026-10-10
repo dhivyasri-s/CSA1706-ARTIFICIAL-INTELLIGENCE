@@ -30,3 +30,31 @@ START
 3. CALL DFS(starting node).
 4. Display VISITED.
 STOP
+
+## UCS (Uniform Cost Search)
+
+START
+
+1. Initialize an empty PRIORITY QUEUE.
+2. Insert the starting node with cost 0.
+3. Initialize VISITED as an empty set.
+
+4. WHILE PRIORITY QUEUE is not empty:
+
+      a. Remove the node with the lowest cost.
+
+      b. IF the node is the goal node:
+             Display the path and total cost.
+             STOP.
+
+      c. IF the node is not in VISITED:
+             Add the node to VISITED.
+
+      d. FOR each neighbour of the current node:
+             Calculate new cost =
+                 current cost + edge cost.
+
+5. If the goal is not found:
+      Display "Path not found".
+
+STOP
