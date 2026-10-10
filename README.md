@@ -58,3 +58,21 @@ START
       Display "Path not found".
 
 STOP
+
+## Water Jug Problem
+
+START
+1. Initialize jug capacities A = 8, B = 5, C = 3.
+2. Set initial state as (8, 0, 0).
+3. Set the target state as (4, 4, 0).
+4. Insert the initial state into the queue.
+5. WHILE the queue is not empty:
+      a. Remove a state from the queue.
+      b. IF the state equals the target:
+            PRINT the solution.
+            STOP.
+      c. Generate new states by pouring water
+         between jugs.
+      d. Add unvisited states to the queue.
+6. PRINT "No solution found".
+STOP
